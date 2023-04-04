@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   height: 85px;
   display: flex;
   justify-content: space-between;
-  padding: 0.2rem calc((100vw - 1000px) / 2);
+  padding: 0 40%;
   z-index: 12;
 `;
 
@@ -17,10 +17,11 @@ export const NavLink = styled(Link)`
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
-  height: 100%;
+  height: 80%;
   cursor: pointer;
   &.active {
-    color: #4d4dff;
+    color: white;
+    background: #292929;
   }
 `;
 
