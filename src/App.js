@@ -7,10 +7,13 @@ import About from "./pages/about";
 import Login from "./pages/login";
 import SignUp from "./pages/signup";
 import Contact from "./pages/contact";
+import Header from "./components/Navbar/header";
+
 
 function App() {
   return (
     <Router>
+      <Header />
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />

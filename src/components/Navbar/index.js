@@ -13,7 +13,7 @@ const Navbar = () => {
             About
           </NavLink>
           <NavLink to="/contact" activeStyle>
-            Contact Us
+            Contact
           </NavLink>
           <NavLink to="/login" activeStyle>
             Login
