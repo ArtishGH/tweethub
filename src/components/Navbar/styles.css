@@ -6,3 +6,11 @@
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+.bar{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
