@@ -28,7 +28,7 @@ export const update = async (req, res, next) => {
             next(err);
         }
     } else {
-        return next(handleError(403, "U can only update your own profile"));
+        return next(handleError(403, "You can only update your own profile"));
     }  
 };
 
@@ -42,11 +42,11 @@ export const deleteUser = async (req, res, next) => {
             next(err);
         }
     } else {
-        return next(handleError(403, "U can only delete your own profile"));
+        return next(handleError(403, "You can only delete your own profile"));
     }  
 };
 
-export const Follow = async (req, res, next) => {
+export const follow = async (req, res, next) => {
         try{
             
             const user = User.findById(req.params.id);
@@ -63,7 +63,7 @@ export const Follow = async (req, res, next) => {
                         following: req.params.id}
                     });
             } else {
-                res.status(400).json('Already following');
+                res.status(403).json('Already following');
             }
         res.status(200).json("folowed");
     } catch (err) {
@@ -71,7 +71,7 @@ export const Follow = async (req, res, next) => {
     }
 };
 
-export const UnFollow = async (req, res, next) => {
+export const unFollow = async (req, res, next) => {
     try{
         
         const user = User.findById(req.params.id);
@@ -89,7 +89,7 @@ export const UnFollow = async (req, res, next) => {
                     following: req.params.id}
                 });
         } else {
-            res.status(400).json('youre not following');
+            res.status(403).json('You are not following');
         }
     res.status(200).json("unfolowed");
 } catch (err) {
