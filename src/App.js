@@ -5,12 +5,12 @@ import Navbar from './components/Navbar';
 import "./styles/main.css";
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
-
+import MyWork from './pages/MyWork/MyWork'
+import Blog from './pages/Blog/Blog'
 
 const Layaout = () => {
 	return(
 		<div>
-			<h1>Navbar</h1>
 			<Outlet></Outlet>
 		</div>		
 	);
@@ -29,6 +29,14 @@ const router = createBrowserRouter([
 				path: "/about/:id",
 				element: <About />,
 			},
+			{
+				path: "/blog",
+				element: <Blog />,
+			},
+			{
+				path: "/mywork",
+				element: <MyWork />,
+			}
 		],
 	},
 ]);
@@ -36,10 +44,10 @@ const router = createBrowserRouter([
 function App() {
 	return (
 		<div>
-			<RouterProvider router={router}></RouterProvider>
 			<React.Fragment>
 				<Navbar/>
 			</React.Fragment>
+			<RouterProvider router={router}></RouterProvider>
 		</div>
 	);
 }
