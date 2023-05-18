@@ -1,10 +1,11 @@
-import { createBrowserRouter, RouterProvider, Outlet} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Outlet, Router} from 'react-router-dom';
 
 import React from 'react';
-
+import Navbar from './components/Navbar';
 import "./styles/main.css";
 import Home from './pages/Home/Home';
-import Profile from './pages/Profile/Profile';
+import About from './pages/About/About';
+
 
 const Layaout = () => {
 	return(
@@ -25,8 +26,8 @@ const router = createBrowserRouter([
 				element: <Home />,
 			},
 			{
-				path: "/profile/:id",
-				element: <Profile />,
+				path: "/about/:id",
+				element: <About />,
 			},
 		],
 	},
@@ -37,7 +38,7 @@ function App() {
 		<div>
 			<RouterProvider router={router}></RouterProvider>
 			<React.Fragment>
-			<Navbar/>
+				<Navbar/>
 			</React.Fragment>
 		</div>
 	);
