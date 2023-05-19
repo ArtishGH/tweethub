@@ -1,25 +1,27 @@
-ArtishGH - Bartosz
-LeonMielon - Leon
-miloZs - Miłosz
+```
+                               ArtishGH - Bartosz
 
-**Funkcje:**
-##
-Backend ->
-##
-'''
-Logowanie użytkowników ✅
-Rejestracja użytkowników ✅
-Tablica z najnowszymi postami ✅
-Filtrowanie po hasztagach ✅
-Like i Dislike ✅
-Komentarze 
+                               LeonMielon - Leon
+
+                                miloZs - Miłosz
 ```
-```
-Frontend ->
-Logowanie użytkowników 
-Rejestracja użytkowników 
-Tablica z najnowszymi postami 
-Filtrowanie po hasztagach 
-Like i Dislike 
-Komentarze 
-```
+
+                                        Funkcje
+
+    Backend ->
+    - Logowanie użytkowników ✅
+    - Rejestracja użytkowników ✅
+    - Tablica z najnowszymi postami ✅
+    - Filtrowanie po hasztagach ✅
+    - Like i Dislike ✅
+    - Komentarze 
+    
+    
+    Frontend ->
+    - Logowanie użytkowników 
+    - Rejestracja użytkowników 
+    - Tablica z najnowszymi postami 
+    - Filtrowanie po hasztagach 
+    - Like i Dislike 
+    - Komentarze 
+    
